@@ -1,0 +1,9 @@
+# Write SQL code to;-
+
+  1. Create database named: soko.
+  2. Select the database named soko.
+  3. Create table named: traders with columns namely: trader_id, trader_name, trader_phone, gender and date of birth
+  4. Create another table named: products with columns namely: product_id, product_name, quantity and price.
+
+Note:
+Make sure to use appropriate data types for your columns and also remember to indicate the primary key correctly.
