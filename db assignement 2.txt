@@ -1,12 +1,25 @@
 # Database Assignment 2: Insert, Select and Filters
 
-On the schooldb,
-On the students table, insert 10 student records, make sure they do not have the same course name.
+Section 1:
+Create a database named: shule, with two tables, namely: students and subjects
 
-Question 1: Select All students whose course name is Software Development.
-Question 2: Select All the students whose name is James Smith.
+students table should have columns namely: student_id, student_name, course_name, gender
+subjects table should have columns namely: subject_id, subject_name, category
+
+Note: in subjects table, category can be: sciences, languages, math or art
+
+Section 2:
+On the students table,
+Note: When creating student records, use different course names.
+
+Question 1: Insert one student record.
+Question 2: Insert three student records at once.
+Question 3: Insert 6 student records at once.
+Question 4: Select All students whose course name is Software Development.
+Question 5: Select All the students whose name is James Smith.
+Question 6: Select all male students
 
 On the subjects table,
 Question 1: Insert one record.
 Question 2: Insert 5 records at once.
-
+Question 3: Select all language subjects.
