@@ -1,0 +1,12 @@
+# Database Assignment 2: Insert, Select and Filters
+
+On the schooldb,
+On the students table, insert 10 student records, make sure they do not have the same course name.
+
+Question 1: Select All students whose course name is Software Development.
+Question 2: Select All the students whose name is James Smith.
+
+On the subjects table,
+Question 1: Insert one record.
+Question 2: Insert 5 records at once.
+
