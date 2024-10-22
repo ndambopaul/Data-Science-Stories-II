@@ -1,0 +1,81 @@
+SQL Assignment: Building a Simple College Database
+
+Objective:
+This assignment will help you practice creating databases, tables, and relationships, as well as inserting, updating, selecting, and deleting records.
+
+Scenario:
+You have been asked to create a simple database for a college. The database should store information about students, courses, and enrollments.
+
+
+Instructions:
+
+1. Create a database:
+   - Create a database named `CollegeDB`.
+
+2. Create three tables:
+   - `Students`: This table will store student information.
+   - `Courses`: This table will store course information.
+   - `Enrollments`: This table will track which students are enrolled in which courses. The table should include references (foreign keys) to both the `Students` and `Courses` tables.
+
+3. Table Details:
+
+   - Students Table:
+     - `student_id` (INT, PRIMARY KEY, AUTO_INCREMENT)
+     - `first_name` (VARCHAR(50))
+     - `last_name` (VARCHAR(50))
+     - `email` (VARCHAR(100))
+   
+   - Courses Table:
+     - `course_id` (INT, PRIMARY KEY, AUTO_INCREMENT)
+     - `course_name` (VARCHAR(100))
+     - `course_description` (TEXT)
+   
+   - Enrollments Table:
+     - `enrollment_id` (INT, PRIMARY KEY, AUTO_INCREMENT)
+     - `student_id` (INT, FOREIGN KEY references Students(student_id))
+     - `course_id` (INT, FOREIGN KEY references Courses(course_id))
+     - `enrollment_date` (DATE)
+
+Part 1: Database and Table Creation
+
+- Write SQL queries to:
+   1. Create the `CollegeDB` database.
+   2. Create the `Students`, `Courses`, and `Enrollments` tables with the structure described above.
+
+
+Part 2: Data Insertion
+
+- Insert the following data into the tables:
+
+   - Students:
+     1. John Doe, johndoe@example.com
+     2. Jane Smith, janesmith@example.com
+
+   - Courses:
+     1. Introduction to Databases
+     2. Advanced SQL Techniques
+
+   - Enrollments:
+     1. John Doe is enrolled in "Introduction to Databases" on '2024-01-15'.
+     2. Jane Smith is enrolled in "Advanced SQL Techniques" on '2024-01-16'.
+
+Part 3: Querying Data
+
+- Write SQL queries to:
+   1. Select all students.
+   2. Select all courses.
+   3. Select all enrollments, showing the student’s name and course name (use a JOIN): IGNORE THIS.
+   4. Select all students enrolled in "Introduction to Databases".
+
+Part 4: Updating Records
+
+- Write an SQL query to:
+   1. Update the course name "Introduction to Databases" to "Database Fundamentals".
+   2. Update John Doe’s email to `john.doe2024@example.com`.
+
+
+Part 5: Deleting Records
+
+- Write an SQL query to:
+   1. Delete the course "Advanced SQL Techniques" from the `Courses` table.
+   2. Remove Jane Smith’s enrollment in any course.
