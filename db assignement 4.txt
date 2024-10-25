@@ -1,0 +1,7 @@
+Step 1: From this github repository, download the file named: school.sql.
+
+Step 2: Open it on vs code and copy its content and paste it on workbench and run it.
+
+Step 3:
+  - Select all the students doing course named: Bachelor of Computer Science
+  - Select all students in Mathematics department
