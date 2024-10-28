@@ -4,7 +4,7 @@ USE universitydb;
 
 create table departments (
     department_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(16)
+	name VARCHAR(100)
 );
 insert into departments (name) values ('Psychology');
 insert into departments (name) values ('Art');
@@ -13,7 +13,7 @@ insert into departments (name) values ('Art');
 
 create table courses (
     course_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	course_name VARCHAR(23) NOT NULL,
+	course_name VARCHAR(255) NOT NULL,
     department_id INT NOT NULL,
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
@@ -31,10 +31,10 @@ insert into courses (course_name, department_id) values ('Bachelor of Sociology'
 
 create table students (
     student_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(50) NOT NULL,
+	name VARCHAR(150) NOT NULL,
 	gender VARCHAR(50) NOT NULL,
 	date_of_birth DATE NOT NULL,
-	course_id VARCHAR(2) NOT NULL,
+	course_id INT NOT NULL,
     FOREIGN KEY (course_id) REFERENCES courses(course_id)
 );
 insert into students (name, gender, date_of_birth, course_id) values ('Eldon Kilgrew', 'Male', '2024-04-12', 10);
