@@ -4,4 +4,7 @@ Step 2: Open it on vs code and copy its content and paste it on workbench and ru
 
 Step 3:
   - Select all the students doing course named: Bachelor of Computer Science
-  - Select all students in Mathematics department
+  - Select all students in Mathematics department.
+  - Select all students whose name starts with s.
+  - Select all students whose name end with es.
+  - Select All students born between 2014 and 2023
